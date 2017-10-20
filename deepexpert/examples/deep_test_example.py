@@ -3,7 +3,7 @@ from keras.layers import Dense
 from keras.models import Model
 import matplotlib.pyplot as plt
 from numpy.random import randn
-from utils import Indicator, DeepExpertLayer
+from . import Indicator, DeepExpertLayer
 
 # parameters
 n_breaks = 10

@@ -5,7 +5,7 @@ from keras.datasets import boston_housing
 import matplotlib.pyplot as plt
 from IPython.display import SVG
 from keras.utils.vis_utils import model_to_dot
-from utils import Indicator, DeepExpertLayer
+from . import Indicator, DeepExpertLayer
 
 # parameters
 n_breaks = 10
