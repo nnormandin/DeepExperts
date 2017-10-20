@@ -13,6 +13,7 @@ n_epochs = 500
 # sample data
 x = randn(1000, 50)
 y = randn(1000, 1)
+y_vecs, breaks = Indicator(y, n_breaks, stack = True)
 
 # architecture
 input_layer = Input((x.shape[1],))
@@ -24,7 +25,7 @@ output = ExpertLayer(l1, n_breaks)
 # fit model
 mod = Model(input_layer, output)
 mod.compile(optimizer = 'adam', loss = 'binary_crossentropy')
-mod.fit(x, Indicator(y, n_breaks, stack = True), epochs = n_epochs)
+mod.fit(x, y_vecs, epochs = n_epochs)
 
 # demonstrate test CDF plot
 test_pred = mod.predict(randn(1, 50)).ravel()
