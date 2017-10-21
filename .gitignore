@@ -2,3 +2,6 @@ __pycache__/*
 deepexpert/__pycache__/*
 .spyproject/*
 bkp.py
+.ipynb_checkpoints/*
+*.png
+*.pdf

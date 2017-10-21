@@ -1,1 +1,2 @@
-from deepexpert.utils import Indicator, ExpertLayer, DeepExpertLayer
+from deepexpert.utils import Indicator
+from deepexpert.layers import ExpertLayer, DeepExpertLayer
